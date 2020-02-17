@@ -55,7 +55,7 @@ goUp = (elevator, toFloor) => {
     } else {
       openDoor(elevator);
     }
-  }, 1000);
+  }, 1500);
 };
 
 goDown = (elevator, toFloor) => {
@@ -69,7 +69,7 @@ goDown = (elevator, toFloor) => {
     } else {
       openDoor(elevator);
     }
-  }, 1000);
+  }, 1500);
 };
 getClosestElevator = floor => {
   return Math.abs(elevatorA.currentFloor - floor) <=
