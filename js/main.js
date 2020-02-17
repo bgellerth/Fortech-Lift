@@ -45,11 +45,11 @@ moveElevator = (elevator, toFloor) => {
 };
 
 goUp = (elevator, toFloor) => {
+  let elevatorDiv = document.getElementById("lift-" + elevator.id);
+  elevatorDiv.querySelector(".lift-arrow-up").style.display = "block";
   setTimeout(() => {
     elevator.currentFloor++;
-    let elevatorDiv = document.getElementById("lift-" + elevator.id);
     elevatorDiv.querySelector(".lift-current-floor").innerHTML = currentFloor;
-    elevatorDiv.querySelector(".lift-arrow-up").style.display = "block";
     if (elevator.currentFloor < toFloor) {
       goUp(elevator, toFloor);
     } else {
@@ -59,11 +59,11 @@ goUp = (elevator, toFloor) => {
 };
 
 goDown = (elevator, toFloor) => {
+  let elevatorDiv = document.getElementById("lift-" + elevator.id);
+  elevatorDiv.querySelector(".lift-arrow-down").style.display = "block";
   setTimeout(() => {
     elevator.currentFloor--;
-    let elevatorDiv = document.getElementById("lift-" + elevator.id);
     elevatorDiv.querySelector(".lift-current-floor").innerHTML = currentFloor;
-    elevatorDiv.querySelector(".lift-arrow-down").style.display = "block";
     if (elevator.currentFloor > toFloor) {
       goDown(elevator, toFloor);
     } else {
