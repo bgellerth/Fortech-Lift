@@ -1,0 +1,52 @@
+.main {
+  padding: 15px 0;
+}
+
+.floor-btn-cont {
+  text-align: center;
+}
+
+.floor-btn-cont .floor-title {
+  text-align: center;
+}
+
+.floor-btn-cont .floor-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 210px;
+}
+
+.floor-btn-cont .floor-buttons .floor-button {
+  display: block;
+  flex: 33.3333%;
+  height: 60px;
+  width: 60px;
+  max-width: 60px;
+  margin: 5px;
+}
+
+.lift-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lift-col .lift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80px;
+  height: 120px;
+  background-color: gray;
+  border-radius: 4px;
+  color: white;
+  font-size: 24px;
+}
+
+.lift-col .lift .lift-arrow {
+  display: none;
+}
